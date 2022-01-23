@@ -14,7 +14,7 @@ runChangeUnit <- changeUnits(run, variable = "speed", unit = "km_per_h", sport =
 #Capitolo 3.7 "Installazione"
 install.packages("trackeR")
 
-devtools::install\_github("trackerproject/trackeR")
+devtools::install_github("trackerproject/trackeR")
 
 
 #Capitolo 3.8 "Caricamento"
