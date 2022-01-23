@@ -1,5 +1,4 @@
 #librerie
-library(rayshader)
 library(ggplot2)
 library(tidyverse)
 
@@ -13,7 +12,6 @@ runChangeUnit <- changeUnits(run, variable = "speed", unit = "km_per_h", sport =
 
 #Capitolo 3.7 "Installazione"
 install.packages("trackeR")
-
 devtools::install_github("trackerproject/trackeR")
 
 
@@ -61,6 +59,7 @@ plot(zones_alt) + theme(legend.position = "None")
 
 #Capitolo 5.2.4 "Relazione Velocità Cadenza"
 remotes::install_github("tylermorganwall/rayshader")
+library(rayshader)
 
 ggmorning=ggplot(morningRun) + stat_density_2d(aes(x=speed, y=cadence_running, 
                 fill=stat(nlevel)), geom="polygon", n=200, bins=50, contour=TRUE) +
