@@ -1,6 +1,5 @@
 #librerie
 library(ggplot2)
-library(tidyverse)
 
 #Capitolo 3.1 "Lettura"
 dataset <- readTCX("filepath/file.tcx")
