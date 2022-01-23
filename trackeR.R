@@ -4,10 +4,10 @@ library(ggplot2)
 library(tidyverse)
 
 #Capitolo 3.1 "Lettura"
-dataframe <- readTCX("filepath/file.tcx")
+dataset <- readTCX("filepath/file.tcx")
 
 
-#Capitolo 3.4 "Unità di misura"
+#Capitolo 3.4 "UnitÃ  di misura"
 runChangeUnit <- changeUnits(run, variable = "speed", unit = "km_per_h", sport = "running")
 
 
@@ -59,7 +59,7 @@ zones_alt <- zones(morningRunTD, what = "altitude", breaks = c(135:164, 179:180)
 plot(zones_alt) + theme(legend.position = "None")
 
 
-#Capitolo 5.2.4 "Relazione Velocità Cadenza"
+#Capitolo 5.2.4 "Relazione VelocitÃ  Cadenza"
 remotes::install_github("tylermorganwall/rayshader")
 
 ggmorning=ggplot(morningRun) + stat_density_2d(aes(x=speed, y=cadence_running, 
