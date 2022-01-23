@@ -35,7 +35,7 @@ runs
 
 
 #Capitolo 5.1 "Morning_Run.tcx"
-morningRun <- readTCX("C:/Users/matte/OneDrive/Desktop/dataframe/Morning_Run.tcx")
+morningRun <- readTCX("filepath/Morning_Run.tcx")
 
 str(morningRun)
 
